@@ -1,5 +1,5 @@
 /* Classify a triangle according to the integer lengths of its sides. */
-
+// Original includes that are needed for general actions
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -27,7 +27,11 @@ int convert(const char length[]) {
     else return -1;
 }
 
-// Classify a triangle, given side lengths as strings:
+/* Classify a triangle, given side lengths as strings:
+ * The order in which the if statements are executed matters in this case
+ * due to some triangles falling into two different categories e.g a triangle
+ * could be both 'Illegal' and 'Equilateral' which would mean that the triangle
+ * is only 'Illegal'*/
 long triangle(long a, long b, long c) {
     if (a < 0 | b < 0 | c < 0) return Illegal;
     if (a == b & b == c) return Equilateral;
