@@ -1,0 +1,3 @@
+Fuel Program - Calum West
+I created this small program to assist when calculating the total cost for a car journey. You input the distance (miles), mpg and cost of fuel (pence) in as arguments when running the program. e.g ./fuel 10 35 130
+I made this program to further solidify my basic understanding of C and different data types along with passing variables into different functions. To improve the program I could add other features such as the ability to input the current fuel in your car and how much the tank can take therefore being able to calculate how many times you would need to fill up on the journey. 
